@@ -59,6 +59,8 @@ import org.testng.annotations.DataProvider;
  *  mvn clean test -Dcucumber.filter.tags="@ui and @smoke"   → UI smoke only
  *  mvn clean test -Dcucumber.filter.tags="@api and @smoke"  → API smoke only
  *  mvn clean test -Dcucumber.filter.tags="@user-service"    → one microservice
+ *  ede70e7752fb6c36ebd2d964e49a7240
+ *  ATTA8294f71745c5112d8092f0a5e5dfef0aefd3f41489a12a339015232f61d1d3ce2E56A35A
  */
 @CucumberOptions(
         features  = "src/test/resources/features",  // scans features/ui AND features/api
