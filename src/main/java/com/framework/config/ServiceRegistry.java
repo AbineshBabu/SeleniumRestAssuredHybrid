@@ -53,6 +53,8 @@ public final class ServiceRegistry {
         SERVICE_URI_MAP.put("todo",    config.todoServiceUri());
         SERVICE_URI_MAP.put("apirestful", config.apirestful());
         SERVICE_URI_MAP.put("gorest", config.gorest());
+        SERVICE_URI_MAP.put("trello", config.trello());
+
 
 //        log.info("ServiceRegistry initialised with {} services: {}", SERVICE_URI_MAP.size(), SERVICE_URI_MAP.keySet());
 //        SERVICE_URI_MAP.forEach((name, uri) -> log.debug("  {} → {}", name, uri));

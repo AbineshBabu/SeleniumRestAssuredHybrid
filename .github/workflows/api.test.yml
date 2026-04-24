@@ -17,10 +17,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Check GoRest connectivity
-        shell: pwsh
-        run: |
-          curl -i "https://api.trello.com/1/cards/69eb71dedba822d15ecfbb46?key=ede70e7752fb6c36ebd2d964e49a7240&token=ATTA8294f71745c5112d8092f0a5e5dfef0aefd3f41489a12a339015232f61d1d3ce2E56A35A"
-
       - name: Run API Tests
+        env:
+          TRELLO_API_KEY: ${{secrets.TRELLO_API_KEY}}
+          TRELLO_TOKEN:  ${{secrets.TRELLO_TOKEN}}
         run: mvn clean test "-Dcucumber.filter.tags=@api"

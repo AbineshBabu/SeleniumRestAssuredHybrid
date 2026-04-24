@@ -87,6 +87,10 @@ public interface ConfigManager extends Config {
     @DefaultValue("https://gorest.co.in/public/v2")
     String gorest();
 
+    @Key("api.trello.service.uri")
+    @DefaultValue("https://api.trello.com/1")
+    String trello();
+
     // -- Environment --------------------------------------------------------
 
     @Key("env")
@@ -144,6 +148,14 @@ public interface ConfigManager extends Config {
     @Key("ui.password")
     @DefaultValue("Password123")
     String uiPassword();
+
+    // -- cred
+
+    @Key("TRELLO_API_KEY")
+    String trellokey();
+
+    @Key("TRELLO_TOKEN")
+    String trellotoken();
 
     // -- Singleton ----------------------------------------------------------
 

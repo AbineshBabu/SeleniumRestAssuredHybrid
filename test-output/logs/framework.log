@@ -1,0 +1,171 @@
+2026-04-24 16:34:06.652 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:34:06.655 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE STARTING         
+2026-04-24 16:34:06.688 [main] INFO  com.framework.hooks.APIHooks -   Base URI : https://jsonplaceholder.typicode.com
+2026-04-24 16:34:06.689 [main] INFO  com.framework.hooks.APIHooks -   Env      : qa
+2026-04-24 16:34:06.689 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:34:07.055 [main] INFO  com.framework.utils.APIRequestBuilder - RestAssured configured. Default Base URI: https://jsonplaceholder.typicode.com
+2026-04-24 16:34:07.055 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:34:07.055 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE STARTING          
+2026-04-24 16:34:07.057 [main] INFO  com.framework.hooks.UIHooks -   Browser  : chrome
+2026-04-24 16:34:07.057 [main] INFO  com.framework.hooks.UIHooks -   Base URL : https://testing.qaautomationlabs.com/
+2026-04-24 16:34:07.057 [main] INFO  com.framework.hooks.UIHooks -   Env      : qa
+2026-04-24 16:34:07.057 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:34:07.102 [main] INFO  com.framework.runner.TestRunner - ╔═══════════════════════════════════════════════╗
+2026-04-24 16:34:07.102 [main] INFO  com.framework.runner.TestRunner - ║          HYBRID TEST FRAMEWORK                ║
+2026-04-24 16:34:07.103 [main] INFO  com.framework.runner.TestRunner - ║          Single Generic Runner                ║
+2026-04-24 16:34:07.103 [main] INFO  com.framework.runner.TestRunner - ╠═══════════════════════════════════════════════╣
+2026-04-24 16:34:07.103 [main] INFO  com.framework.runner.TestRunner - ║  Tag Filter : @api
+2026-04-24 16:34:07.103 [main] INFO  com.framework.runner.TestRunner - ║  Parallel   : ENABLED                         ║
+2026-04-24 16:34:07.103 [main] INFO  com.framework.runner.TestRunner - ║  Features   : features/ui + features/api      ║
+2026-04-24 16:34:07.103 [main] INFO  com.framework.runner.TestRunner - ╚═══════════════════════════════════════════════╝
+2026-04-24 16:34:07.426 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - >> START [API] Scenario: To verify the get call
+2026-04-24 16:34:07.427 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks -    Tags: [@api]
+2026-04-24 16:34:07.436 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Clearing ScenarioContext (0 keys)
+2026-04-24 16:34:07.437 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - << END [API] [PASSED] Scenario: To verify the get call
+2026-04-24 16:34:07.447 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:34:07.447 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE COMPLETED         
+2026-04-24 16:34:07.447 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:34:07.447 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:34:07.447 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE COMPLETED        
+2026-04-24 16:34:07.448 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:48:23.028 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:48:23.031 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE STARTING         
+2026-04-24 16:48:23.068 [main] INFO  com.framework.hooks.APIHooks -   Base URI : https://jsonplaceholder.typicode.com
+2026-04-24 16:48:23.068 [main] INFO  com.framework.hooks.APIHooks -   Env      : qa
+2026-04-24 16:48:23.069 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:48:23.357 [main] INFO  com.framework.utils.APIRequestBuilder - RestAssured configured. Default Base URI: https://jsonplaceholder.typicode.com
+2026-04-24 16:48:23.357 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:48:23.357 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE STARTING          
+2026-04-24 16:48:23.357 [main] INFO  com.framework.hooks.UIHooks -   Browser  : chrome
+2026-04-24 16:48:23.357 [main] INFO  com.framework.hooks.UIHooks -   Base URL : https://testing.qaautomationlabs.com/
+2026-04-24 16:48:23.358 [main] INFO  com.framework.hooks.UIHooks -   Env      : qa
+2026-04-24 16:48:23.358 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:48:23.383 [main] INFO  com.framework.runner.TestRunner - ╔═══════════════════════════════════════════════╗
+2026-04-24 16:48:23.383 [main] INFO  com.framework.runner.TestRunner - ║          HYBRID TEST FRAMEWORK                ║
+2026-04-24 16:48:23.383 [main] INFO  com.framework.runner.TestRunner - ║          Single Generic Runner                ║
+2026-04-24 16:48:23.383 [main] INFO  com.framework.runner.TestRunner - ╠═══════════════════════════════════════════════╣
+2026-04-24 16:48:23.383 [main] INFO  com.framework.runner.TestRunner - ║  Tag Filter : @api
+2026-04-24 16:48:23.383 [main] INFO  com.framework.runner.TestRunner - ║  Parallel   : ENABLED                         ║
+2026-04-24 16:48:23.384 [main] INFO  com.framework.runner.TestRunner - ║  Features   : features/ui + features/api      ║
+2026-04-24 16:48:23.384 [main] INFO  com.framework.runner.TestRunner - ╚═══════════════════════════════════════════════╝
+2026-04-24 16:48:23.554 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - >> START [API] Scenario: To verify the get call
+2026-04-24 16:48:23.554 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks -    Tags: [@api]
+2026-04-24 16:48:23.562 [TestNG-PoolService-1] DEBUG com.framework.config.ServiceRegistry - Resolved service 'trello' → 'https://api.trello.com/1'
+2026-04-24 16:48:23.562 [TestNG-PoolService-1] INFO  com.framework.utils.APIRequestBuilder - Building RequestSpec for service URI: https://api.trello.com/1
+2026-04-24 16:48:23.677 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [REQUEST_SPEC] = io.restassured.internal.RequestSpecificationImpl@4b88c292
+2026-04-24 16:48:23.677 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [ACTIVE_SERVICE] = trello
+2026-04-24 16:48:23.989 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Clearing ScenarioContext (2 keys)
+2026-04-24 16:48:23.990 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - << END [API] [FAILED] Scenario: To verify the get call
+2026-04-24 16:48:23.990 [TestNG-PoolService-1] ERROR com.framework.hooks.APIHooks -    API Test Failed — review request/response logs above
+2026-04-24 16:48:24.000 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:48:24.000 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE COMPLETED         
+2026-04-24 16:48:24.001 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:48:24.001 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:48:24.001 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE COMPLETED        
+2026-04-24 16:48:24.001 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:50:56.142 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:50:56.144 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE STARTING         
+2026-04-24 16:50:56.175 [main] INFO  com.framework.hooks.APIHooks -   Base URI : https://jsonplaceholder.typicode.com
+2026-04-24 16:50:56.175 [main] INFO  com.framework.hooks.APIHooks -   Env      : qa
+2026-04-24 16:50:56.175 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:50:56.419 [main] INFO  com.framework.utils.APIRequestBuilder - RestAssured configured. Default Base URI: https://jsonplaceholder.typicode.com
+2026-04-24 16:50:56.419 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:50:56.419 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE STARTING          
+2026-04-24 16:50:56.420 [main] INFO  com.framework.hooks.UIHooks -   Browser  : chrome
+2026-04-24 16:50:56.420 [main] INFO  com.framework.hooks.UIHooks -   Base URL : https://testing.qaautomationlabs.com/
+2026-04-24 16:50:56.420 [main] INFO  com.framework.hooks.UIHooks -   Env      : qa
+2026-04-24 16:50:56.420 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:50:56.445 [main] INFO  com.framework.runner.TestRunner - ╔═══════════════════════════════════════════════╗
+2026-04-24 16:50:56.445 [main] INFO  com.framework.runner.TestRunner - ║          HYBRID TEST FRAMEWORK                ║
+2026-04-24 16:50:56.445 [main] INFO  com.framework.runner.TestRunner - ║          Single Generic Runner                ║
+2026-04-24 16:50:56.445 [main] INFO  com.framework.runner.TestRunner - ╠═══════════════════════════════════════════════╣
+2026-04-24 16:50:56.446 [main] INFO  com.framework.runner.TestRunner - ║  Tag Filter : @api
+2026-04-24 16:50:56.446 [main] INFO  com.framework.runner.TestRunner - ║  Parallel   : ENABLED                         ║
+2026-04-24 16:50:56.446 [main] INFO  com.framework.runner.TestRunner - ║  Features   : features/ui + features/api      ║
+2026-04-24 16:50:56.446 [main] INFO  com.framework.runner.TestRunner - ╚═══════════════════════════════════════════════╝
+2026-04-24 16:50:56.608 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - >> START [API] Scenario: To verify the get call
+2026-04-24 16:50:56.608 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks -    Tags: [@api]
+2026-04-24 16:50:56.615 [TestNG-PoolService-1] DEBUG com.framework.config.ServiceRegistry - Resolved service 'trello' → 'https://api.trello.com/1'
+2026-04-24 16:50:56.615 [TestNG-PoolService-1] INFO  com.framework.utils.APIRequestBuilder - Building RequestSpec for service URI: https://api.trello.com/1
+2026-04-24 16:50:56.717 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [REQUEST_SPEC] = io.restassured.internal.RequestSpecificationImpl@46dea445
+2026-04-24 16:50:56.717 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [ACTIVE_SERVICE] = trello
+2026-04-24 16:50:57.557 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [RESPONSE] = io.restassured.internal.RestAssuredResponseImpl@15dace5e
+2026-04-24 16:50:57.564 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Clearing ScenarioContext (3 keys)
+2026-04-24 16:50:57.565 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - << END [API] [FAILED] Scenario: To verify the get call
+2026-04-24 16:50:57.565 [TestNG-PoolService-1] ERROR com.framework.hooks.APIHooks -    API Test Failed — review request/response logs above
+2026-04-24 16:50:57.572 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:50:57.572 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE COMPLETED         
+2026-04-24 16:50:57.572 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:50:57.572 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:50:57.572 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE COMPLETED        
+2026-04-24 16:50:57.572 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:53:24.225 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:53:24.227 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE STARTING         
+2026-04-24 16:53:24.258 [main] INFO  com.framework.hooks.APIHooks -   Base URI : https://jsonplaceholder.typicode.com
+2026-04-24 16:53:24.259 [main] INFO  com.framework.hooks.APIHooks -   Env      : qa
+2026-04-24 16:53:24.259 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:53:24.503 [main] INFO  com.framework.utils.APIRequestBuilder - RestAssured configured. Default Base URI: https://jsonplaceholder.typicode.com
+2026-04-24 16:53:24.504 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:53:24.504 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE STARTING          
+2026-04-24 16:53:24.504 [main] INFO  com.framework.hooks.UIHooks -   Browser  : chrome
+2026-04-24 16:53:24.504 [main] INFO  com.framework.hooks.UIHooks -   Base URL : https://testing.qaautomationlabs.com/
+2026-04-24 16:53:24.504 [main] INFO  com.framework.hooks.UIHooks -   Env      : qa
+2026-04-24 16:53:24.505 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:53:24.528 [main] INFO  com.framework.runner.TestRunner - ╔═══════════════════════════════════════════════╗
+2026-04-24 16:53:24.528 [main] INFO  com.framework.runner.TestRunner - ║          HYBRID TEST FRAMEWORK                ║
+2026-04-24 16:53:24.529 [main] INFO  com.framework.runner.TestRunner - ║          Single Generic Runner                ║
+2026-04-24 16:53:24.529 [main] INFO  com.framework.runner.TestRunner - ╠═══════════════════════════════════════════════╣
+2026-04-24 16:53:24.529 [main] INFO  com.framework.runner.TestRunner - ║  Tag Filter : @api
+2026-04-24 16:53:24.529 [main] INFO  com.framework.runner.TestRunner - ║  Parallel   : ENABLED                         ║
+2026-04-24 16:53:24.529 [main] INFO  com.framework.runner.TestRunner - ║  Features   : features/ui + features/api      ║
+2026-04-24 16:53:24.529 [main] INFO  com.framework.runner.TestRunner - ╚═══════════════════════════════════════════════╝
+2026-04-24 16:53:24.686 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - >> START [API] Scenario: To verify the get call
+2026-04-24 16:53:24.687 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks -    Tags: [@api]
+2026-04-24 16:53:24.693 [TestNG-PoolService-1] DEBUG com.framework.config.ServiceRegistry - Resolved service 'trello' → 'https://api.trello.com/1'
+2026-04-24 16:53:24.693 [TestNG-PoolService-1] INFO  com.framework.utils.APIRequestBuilder - Building RequestSpec for service URI: https://api.trello.com/1
+2026-04-24 16:53:24.798 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [REQUEST_SPEC] = io.restassured.internal.RequestSpecificationImpl@2c716b6
+2026-04-24 16:53:24.798 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [ACTIVE_SERVICE] = trello
+2026-04-24 16:53:25.610 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [RESPONSE] = io.restassured.internal.RestAssuredResponseImpl@81b73b
+2026-04-24 16:53:25.612 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Clearing ScenarioContext (3 keys)
+2026-04-24 16:53:25.613 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - << END [API] [PASSED] Scenario: To verify the get call
+2026-04-24 16:53:25.618 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:53:25.618 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE COMPLETED         
+2026-04-24 16:53:25.619 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 16:53:25.619 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 16:53:25.619 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE COMPLETED        
+2026-04-24 16:53:25.619 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 17:02:18.992 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 17:02:18.994 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE STARTING         
+2026-04-24 17:02:19.030 [main] INFO  com.framework.hooks.APIHooks -   Base URI : https://jsonplaceholder.typicode.com
+2026-04-24 17:02:19.031 [main] INFO  com.framework.hooks.APIHooks -   Env      : qa
+2026-04-24 17:02:19.031 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 17:02:19.283 [main] INFO  com.framework.utils.APIRequestBuilder - RestAssured configured. Default Base URI: https://jsonplaceholder.typicode.com
+2026-04-24 17:02:19.284 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 17:02:19.284 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE STARTING          
+2026-04-24 17:02:19.284 [main] INFO  com.framework.hooks.UIHooks -   Browser  : chrome
+2026-04-24 17:02:19.284 [main] INFO  com.framework.hooks.UIHooks -   Base URL : https://testing.qaautomationlabs.com/
+2026-04-24 17:02:19.284 [main] INFO  com.framework.hooks.UIHooks -   Env      : qa
+2026-04-24 17:02:19.284 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 17:02:19.308 [main] INFO  com.framework.runner.TestRunner - ╔═══════════════════════════════════════════════╗
+2026-04-24 17:02:19.309 [main] INFO  com.framework.runner.TestRunner - ║          HYBRID TEST FRAMEWORK                ║
+2026-04-24 17:02:19.309 [main] INFO  com.framework.runner.TestRunner - ║          Single Generic Runner                ║
+2026-04-24 17:02:19.309 [main] INFO  com.framework.runner.TestRunner - ╠═══════════════════════════════════════════════╣
+2026-04-24 17:02:19.309 [main] INFO  com.framework.runner.TestRunner - ║  Tag Filter : @api
+2026-04-24 17:02:19.309 [main] INFO  com.framework.runner.TestRunner - ║  Parallel   : ENABLED                         ║
+2026-04-24 17:02:19.310 [main] INFO  com.framework.runner.TestRunner - ║  Features   : features/ui + features/api      ║
+2026-04-24 17:02:19.310 [main] INFO  com.framework.runner.TestRunner - ╚═══════════════════════════════════════════════╝
+2026-04-24 17:02:19.474 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - >> START [API] Scenario: To verify the get call
+2026-04-24 17:02:19.475 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks -    Tags: [@api]
+2026-04-24 17:02:19.482 [TestNG-PoolService-1] DEBUG com.framework.config.ServiceRegistry - Resolved service 'trello' → 'https://api.trello.com/1'
+2026-04-24 17:02:19.483 [TestNG-PoolService-1] INFO  com.framework.utils.APIRequestBuilder - Building RequestSpec for service URI: https://api.trello.com/1
+2026-04-24 17:02:19.579 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [REQUEST_SPEC] = io.restassured.internal.RequestSpecificationImpl@242bf964
+2026-04-24 17:02:19.579 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [ACTIVE_SERVICE] = trello
+2026-04-24 17:02:20.440 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [RESPONSE] = io.restassured.internal.RestAssuredResponseImpl@5f6d75e3
+2026-04-24 17:02:20.869 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Clearing ScenarioContext (3 keys)
+2026-04-24 17:02:20.870 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - << END [API] [PASSED] Scenario: To verify the get call
+2026-04-24 17:02:20.875 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 17:02:20.875 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE COMPLETED         
+2026-04-24 17:02:20.876 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-24 17:02:20.876 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-24 17:02:20.876 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE COMPLETED        
+2026-04-24 17:02:20.876 [main] INFO  com.framework.hooks.APIHooks - ========================================

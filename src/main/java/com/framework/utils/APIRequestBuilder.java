@@ -55,18 +55,27 @@ public class APIRequestBuilder {
             .build();
     }
 
-    public static RequestSpecification getAuthRequestSpec(String token) {
+    public static RequestSpecification getAuthBearerRequestSpec(String token) {
         return new RequestSpecBuilder()
             .addRequestSpecification(getBaseRequestSpec())
             .addHeader("Authorization", "Bearer " + token)
             .build();
     }
 
-    public static RequestSpecification getAuthServiceRequestSpec(String serviceBaseUri, String token) {
+    public static RequestSpecification getAuthBearerServiceRequestSpec(String serviceBaseUri, String token) {
         return new RequestSpecBuilder()
             .addRequestSpecification(getServiceRequestSpec(serviceBaseUri))
             .addHeader("Authorization", "Bearer " + token)
             .build();
+    }
+
+    public static RequestSpecification getAuthOAuthServiceRequestSpec(String serviceBaseUri, String token) {
+        return new RequestSpecBuilder()
+                .addRequestSpecification(getServiceRequestSpec(serviceBaseUri))
+                .addHeader("Authorization",
+                        "OAuth oauth_consumer_key=\"" + config.trellokey() + "\", " +
+                                "oauth_token=\"" + config.trellotoken() + "\"")
+                .build();
     }
 
     public static RequestSpecification getRequestSpecWithHeaders(Map<String, String> headers) {
