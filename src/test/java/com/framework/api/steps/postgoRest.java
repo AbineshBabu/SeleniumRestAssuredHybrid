@@ -34,7 +34,8 @@ public class postgoRest {
     @Given("the user setup the {string} service")
     public void the_user_setup_the_service(String serviceName) {
         String uri=ServiceRegistry.getBaseUri(serviceName);
-        RequestSpecification spec =APIRequestBuilder.getAuthServiceRequestSpec(uri,"4d3b50232fabf4623d62ad26984567a94c038c0e96a60951a0b09d6ff9248182");
+        RequestSpecification spec =APIRequestBuilder.
+                getAuthServiceRequestSpec(uri,"4d3b50232fabf4623d62ad26984567a94c038c0e96a60951a0b09d6ff9248182");
 
         scenarioContext.set(Key.ACTIVE_SERVICE,serviceName);
         scenarioContext.set(Key.REQUEST_SPEC,spec);

@@ -17,5 +17,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Check GoRest connectivity
+        run: |
+            curl -i -H "Authorization: Bearer ${{ secrets.GOREST_TOKEN }}" \
+            https://gorest.co.in/public/v2/users
+
       - name: Run API Tests
         run: mvn clean test "-Dcucumber.filter.tags=@api"
