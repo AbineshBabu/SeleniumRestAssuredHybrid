@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng.xml — Single Unified Suite
+    ═══════════════════════════════════════════════════════════════════════════
+
+    ONE file. ONE runner. Tags control what runs — nothing else needed.
+
+    REMOVED (no longer exist in this framework):
+      ✗ testng-api.xml    → use -Dcucumber.filter.tags="@api" instead
+      ✗ testng-ui.xml     → use -Dcucumber.filter.tags="@ui" instead
+      ✗ testng-suite.xml  → this file handles everything
+      ✗ APITestRunner     → TestRunner covers all test types
+      ✗ UITestRunner      → TestRunner covers all test types
+
+    ─── PARALLEL EXECUTION ─────────────────────────────────────────────────────
+
+    data-provider-thread-count="4"
+      → TestNG creates a pool of 4 threads.
+      → Each thread picks up the next available Cucumber scenario.
+      → Thread-safety is guaranteed by the framework infrastructure:
+            DriverManager   ThreadLocal<WebDriver>  — one browser per thread
+            ScenarioContext PicoContainer DI        — one context per scenario
+
+    Tuning guide:
+      @api only  → bump to 6–8   (REST Assured is lightweight, no browser)
+      @ui only   → keep at 2–3   (each thread opens a full browser window)
+      mixed      → 3–4           (safe default for most machines)
+
+    ─── EXECUTION COMMANDS ─────────────────────────────────────────────────────
+
+    mvn clean test                                           → all tests
+    mvn clean test -Dcucumber.filter.tags="@ui"              → UI only
+    mvn clean test -Dcucumber.filter.tags="@api"             → API only
+    mvn clean test -Dcucumber.filter.tags="@smoke"           → smoke suite
+    mvn clean test -Dcucumber.filter.tags="@regression"      → regression
+    mvn clean test -Dcucumber.filter.tags="@ui and @smoke"   → UI smoke only
+    mvn clean test -Dcucumber.filter.tags="@api and @smoke"  → API smoke only
+    mvn clean test -Dcucumber.filter.tags="@user-service"    → one microservice
+    mvn clean test -Dbrowser=firefox -Dbrowser.headless=true → headless Firefox
+    mvn clean test -Denv=staging                             → staging env
+-->
+
+<suite name="Hybrid Framework" verbose="2" data-provider-thread-count="4">
+
+    <parameter name="env"     value="qa"/>
+    <parameter name="browser" value="chrome"/>
+
+    <test name="All Tests">
+        <classes>
+            <class name="com.framework.runner.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>
