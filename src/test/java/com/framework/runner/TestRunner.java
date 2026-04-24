@@ -39,7 +39,7 @@ import org.testng.annotations.DataProvider;
  *
  *  A second runner class adds zero thread-safety — it just duplicates code.
  *
- * ─── PARALLEL CONFIGURATION ──────────────────────────────────────────────────
+ * ─── PARALLEL CONFIGURATION ─────────────────────────────────────────────────
  *
  *  @DataProvider(parallel = true)       → TestNG runs scenarios concurrently
  *  data-provider-thread-count (testng.xml) → controls number of threads
