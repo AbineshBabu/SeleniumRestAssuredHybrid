@@ -11,6 +11,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+    # ✅ ls — inspect what was checked out
+      - name: Inspect Workspace
+        run: |
+          echo "📂 Workspace contents:"
+          ls -la       
+
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
@@ -38,46 +44,17 @@ jobs:
             echo "⚠️ reports folder NOT found"
           fi
 
-      - name: upload atificat
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: cucumber-reports
-          path: test-output/reports/
-          retention-days: 7
-
-  ui-tests:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-
-      - name: Run UI Tests
-        env:
-          TRELLO_API_KEY: ${{secrets.TRELLO_API_KEY}}
-          TRELLO_TOKEN: ${{secrets.TRELLO_TOKEN}}
-          # ✅ LINUX COMMAND — run tests and log exit code
-        run: |
-          echo "Running API tests..."
-          mvn clean test "-Dcucumber.filter.tags=@ui"
-          echo "Maven exited with code $?"
-
-      - name: Check Report Folder
+      - name: Analyse Test Results
         if: always()
         run: |
-          echo "Checking target directory..."
-          ls -la test-output/
-          if [ -d "test-output/reports/" ]; then
-            echo "✅ reports folder found"
-          else
-            echo "⚠️ reports folder NOT found"
-          fi
+          echo "📋 Reading cucumber report json..."
+          cat test-output/reports/cucumber-report.json
+
+          echo "🔍 Searching for FAILED scenarios..."
+          grep -r "failed" test-output/reports/ || echo "No failures found"
+
+          echo "🔍 Searching for Exceptions in reports..."
+          grep -r "Exception" test-output/reports/ || echo "No exceptions found"          
 
       - name: upload atificat
         if: always()

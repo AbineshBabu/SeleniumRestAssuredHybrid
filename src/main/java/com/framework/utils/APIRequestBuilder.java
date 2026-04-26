@@ -36,14 +36,7 @@ public class APIRequestBuilder {
             .build();
     }
 
-    /**
-     * NEW: Service-specific request spec.
-     * Accepts a custom base URI — used by the microservice step definitions
-     * to dynamically point REST Assured at the correct service.
-     *
-     * @param serviceBaseUri the base URI of the target microservice
-     * @return a fully configured RequestSpecification
-     */
+
     public static RequestSpecification getServiceRequestSpec(String serviceBaseUri) {
         log.info("Building RequestSpec for service URI: {}", serviceBaseUri);
         return new RequestSpecBuilder()
