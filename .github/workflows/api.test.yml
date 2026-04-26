@@ -19,6 +19,30 @@ jobs:
 
       - name: Run API Tests
         env:
-          TRELLO_API_KEY: ${{secrets.TRELLO_API_KEY}}
-          TRELLO_TOKEN:  ${{secrets.TRELLO_TOKEN}}
-        run: mvn clean test "-Dcucumber.filter.tags=@api"
+            TRELLO_API_KEY: ${{secrets.TRELLO_API_KEY}}
+            TRELLO_TOKEN: ${{secrets.TRELLO_TOKEN}}
+          # ✅ LINUX COMMAND — run tests and log exit code
+        run: |
+          echo "Running API tests..."
+          mvn clean test "-Dcucumber.filter.tags=@api"
+          echo "Maven exited with code $?"
+
+      - name: check the target folder
+        if: always()
+        run: |
+          echo "checking the target holder"
+          ls -ls target/
+          if[ -d "target/cucumber-reports"]; then
+            echo "folder found"
+          else
+            echo "not found"
+          fi
+
+      - name: upload atificat
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-reports
+          path: target/cucumber-reports/
+          retention-days: 7
+

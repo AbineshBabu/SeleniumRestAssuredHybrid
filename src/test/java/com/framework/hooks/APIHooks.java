@@ -1,6 +1,7 @@
 package com.framework.hooks;
 
 import com.framework.config.ConfigManager;
+import com.framework.config.ServiceRegistry;
 import com.framework.utils.APIRequestBuilder;
 import com.framework.utils.ScenarioContext;
 import io.cucumber.java.After;
@@ -8,6 +9,8 @@ import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Given;
+import io.restassured.specification.RequestSpecification;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

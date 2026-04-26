@@ -1,5 +1,0 @@
-com\framework\hooks\APIHooks.class
-com\framework\hooks\UIHooks.class
-com\framework\api\steps\getCards.class
-com\framework\runner\TestRunner.class
-com\framework\ui\steps\HomePageSteps.class

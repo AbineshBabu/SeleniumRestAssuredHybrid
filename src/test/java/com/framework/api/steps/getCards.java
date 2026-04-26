@@ -1,11 +1,13 @@
 package com.framework.api.steps;
 
 import com.framework.config.ServiceRegistry;
+import com.framework.dto.response.trello.GetCards;
 import com.framework.utils.APIRequestBuilder;
 import static  com.framework.utils.ScenarioContext.*;
 import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertNotNull;
 
+import com.framework.utils.FileUtils;
 import com.framework.utils.ScenarioContext;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -38,6 +40,8 @@ public class getCards {
         scenarioContext.set(Key.REQUEST_SPEC,spec);
         scenarioContext.set(Key.ACTIVE_SERVICE,serviceName);
     }
+
+
     @When("the user send GET request to {string}")
     public void the_user_send_get_request_to(String endpoint) {
         RequestSpecification spec= scenarioContext.get(Key.REQUEST_SPEC);
@@ -57,8 +61,11 @@ public class getCards {
     public void the_user_verify_if_the_response_contains(String expectedProperty) {
         Response response =scenarioContext.get(Key.RESPONSE);
 
-        String id=response.jsonPath().get(expectedProperty);
+        GetCards getCards=response.as(GetCards.class);
 
+        assertNotNull(getCards.getId());
+
+        String id=response.jsonPath().get(expectedProperty);
         assertNotNull(id);
 
     }
