@@ -31,7 +31,7 @@ jobs:
         if: always()
         run: |
           echo "checking the target holder"
-          ls -ls target/
+          ls -la target/
           if[ -d "target/cucumber-reports"]; then
             echo "folder found"
           else
