@@ -1,0 +1,35 @@
+2026-04-26 18:41:42.901 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-26 18:41:42.904 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE STARTING         
+2026-04-26 18:41:42.938 [main] INFO  com.framework.hooks.APIHooks -   Base URI : https://jsonplaceholder.typicode.com
+2026-04-26 18:41:42.939 [main] INFO  com.framework.hooks.APIHooks -   Env      : qa
+2026-04-26 18:41:42.939 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-26 18:41:43.261 [main] INFO  com.framework.utils.APIRequestBuilder - RestAssured configured. Default Base URI: https://jsonplaceholder.typicode.com
+2026-04-26 18:41:43.262 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-26 18:41:43.262 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE STARTING          
+2026-04-26 18:41:43.262 [main] INFO  com.framework.hooks.UIHooks -   Browser  : chrome
+2026-04-26 18:41:43.262 [main] INFO  com.framework.hooks.UIHooks -   Base URL : https://testing.qaautomationlabs.com/
+2026-04-26 18:41:43.262 [main] INFO  com.framework.hooks.UIHooks -   Env      : qa
+2026-04-26 18:41:43.263 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-26 18:41:43.287 [main] INFO  com.framework.runner.TestRunner - ╔═══════════════════════════════════════════════╗
+2026-04-26 18:41:43.287 [main] INFO  com.framework.runner.TestRunner - ║          HYBRID TEST FRAMEWORK                ║
+2026-04-26 18:41:43.288 [main] INFO  com.framework.runner.TestRunner - ║          Single Generic Runner                ║
+2026-04-26 18:41:43.288 [main] INFO  com.framework.runner.TestRunner - ╠═══════════════════════════════════════════════╣
+2026-04-26 18:41:43.288 [main] INFO  com.framework.runner.TestRunner - ║  Tag Filter : @api
+2026-04-26 18:41:43.288 [main] INFO  com.framework.runner.TestRunner - ║  Parallel   : ENABLED                         ║
+2026-04-26 18:41:43.288 [main] INFO  com.framework.runner.TestRunner - ║  Features   : features/ui + features/api      ║
+2026-04-26 18:41:43.288 [main] INFO  com.framework.runner.TestRunner - ╚═══════════════════════════════════════════════╝
+2026-04-26 18:41:43.459 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - >> START [API] Scenario: To verify the get call
+2026-04-26 18:41:43.460 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks -    Tags: [@api]
+2026-04-26 18:41:43.466 [TestNG-PoolService-1] DEBUG com.framework.config.ServiceRegistry - Resolved service 'trello' → 'https://api.trello.com/1'
+2026-04-26 18:41:43.536 [TestNG-PoolService-1] INFO  com.framework.utils.APIRequestBuilder - Building RequestSpec for service URI: https://api.trello.com/1
+2026-04-26 18:41:43.626 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [REQUEST_SPEC] = io.restassured.internal.RequestSpecificationImpl@23b0e541
+2026-04-26 18:41:43.626 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [ACTIVE_SERVICE] = trello
+2026-04-26 18:41:44.458 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Context SET [RESPONSE] = io.restassured.internal.RestAssuredResponseImpl@394cc98
+2026-04-26 18:41:45.049 [TestNG-PoolService-1] DEBUG com.framework.utils.ScenarioContext - Clearing ScenarioContext (3 keys)
+2026-04-26 18:41:45.050 [TestNG-PoolService-1] INFO  com.framework.hooks.APIHooks - << END [API] [PASSED] Scenario: To verify the get call
+2026-04-26 18:41:45.056 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-26 18:41:45.056 [main] INFO  com.framework.hooks.UIHooks -        UI TEST SUITE COMPLETED         
+2026-04-26 18:41:45.056 [main] INFO  com.framework.hooks.UIHooks - ========================================
+2026-04-26 18:41:45.057 [main] INFO  com.framework.hooks.APIHooks - ========================================
+2026-04-26 18:41:45.057 [main] INFO  com.framework.hooks.APIHooks -        API TEST SUITE COMPLETED        
+2026-04-26 18:41:45.057 [main] INFO  com.framework.hooks.APIHooks - ========================================

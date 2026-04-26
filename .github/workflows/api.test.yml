@@ -31,18 +31,18 @@ jobs:
         if: always()
         run: |
           echo "Checking target directory..."
-          ls -la target/
-          if [ -d "target/cucumber-reports" ]; then
-            echo "✅ cucumber-reports folder found"
-          else
-            echo "⚠️ cucumber-reports folder NOT found"
-          fi
+          ls -la test-output/reports/
+#          if [ -d "target/cucumber-reports" ]; then
+#            echo "✅ cucumber-reports folder found"
+#          else
+#            echo "⚠️ cucumber-reports folder NOT found"
+#          fi
 
       - name: upload atificat
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cucumber-reports
-          path: target/cucumber-reports/
+          path: test-output/reports/
           retention-days: 7
 
