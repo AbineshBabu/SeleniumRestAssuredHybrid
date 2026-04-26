@@ -31,12 +31,12 @@ jobs:
         if: always()
         run: |
           echo "Checking target directory..."
-          ls -la test-output/reports/
-#          if [ -d "target/cucumber-reports" ]; then
-#            echo "✅ cucumber-reports folder found"
-#          else
-#            echo "⚠️ cucumber-reports folder NOT found"
-#          fi
+          ls -la test-output/
+          if [ -d "test-output/reports/" ]; then
+            echo "✅ cucumber-reports folder found"
+          else
+            echo "⚠️ cucumber-reports folder NOT found"
+          fi
 
       - name: upload atificat
         if: always()
